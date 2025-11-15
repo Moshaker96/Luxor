@@ -17,15 +17,15 @@ body {
 
 h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #191970; /* Default heading color */
+    color: #191970; /* Default heading color for light backgrounds */
 }
 
 /* --- Navigation Logo (file (1).png) --- */
 .logo {
     text-indent: -9999px; 
     overflow: hidden; 
-    width: 150px; /* Width for the image file (1).png */
-    height: 50px; 
+    width: 300px; /* Width for the logo image */
+    height: 100px; 
     margin: 0;
     
     /* Navigation Logo: file (1).png */
@@ -37,21 +37,33 @@ h2, h3 {
     z-index: 10; 
 }
 
-/* --- Header & Navigation (Split Background) --- */
+/* --- Header & Navigation (Split Background: White behind Logo, Image on Right) --- */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 80px; 
+    padding: 25px 80px; 
     
-    /* SPLIT BACKGROUND EFFECT: Deep Lapis Blue on the left (250px), White on the right */
-    background: linear-gradient(to right, #191970 250px, #fff 250px);
-    
-    border-bottom: 2px solid #D4AF37; /* Gold separating line */
+    /* SPLIT BACKGROUND EFFECT: 
+       Layer 1: White gradient to cover the logo area (left 300px)
+       Layer 2: logo-01.jpg as the full background image */
+    background-image: 
+        linear-gradient(to right, 
+            #fff 380px, /* Solid White for the left side (380px to cover logo and padding) */
+            rgba(255, 255, 255, 0) 380px /* Transparent from 380px onwards to show the image */
+        ),
+        url('../logo-01.jpg'); /* The original image */
+        
+    background-size: cover; 
+    background-position: right center; /* Start image on the right */
+    background-repeat: no-repeat;
+
+    border-bottom: 2px solid #D4AF37; 
 }
 
 .main-nav a {
-    color: #333333; 
+    /* Use light color for text over the dark logo-01.jpg background on the right side */
+    color: #F8F4E1; 
     text-decoration: none;
     margin-left: 30px; 
     text-transform: uppercase;
@@ -69,12 +81,12 @@ h2, h3 {
     text-align: center;
     padding: 120px 50px; 
     
-    /* Revert to the soft, sand background */
+    /* Revert to the soft, sand background for a clean look */
     background-color: #F8F4E1; 
     
     position: relative;
     z-index: 1; 
-    color: #333333; 
+    color: #333333; /* Dark text on light background */
 }
 
 .hero h2 {
@@ -130,4 +142,7 @@ footer {
     font-size: 0.8em;
 }
 
-/* * IMPORTANT: Ensure your Product Page (nile-tunic.html) CSS is appended below this line */
+/* * PRODUCT PAGE STYLING (nile-tunic.html) - APPEND YOUR EXISTING CSS BELOW THIS LINE
+ * * You must add the existing CSS for your product page here 
+ * (the CSS for .product-details, .image-placeholder, etc.). 
+*/
