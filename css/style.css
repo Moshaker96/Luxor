@@ -1,18 +1,31 @@
-/* --- Global Styles --- */
+/* LUXOR Brand Colors: 
+   Sand/Linen: #F8F4E1
+   Deep Lapis: #191970
+   Rich Gold: #D4AF37
+   Dark Text: #333333
+*/
+
+/* --- Global & Typography --- */
 body {
-    font-family: 'Georgia', serif; /* Elegant, classic font */
-    background-color: #fcf8e8; /* Soft Sand/Linen White background */
-    color: #383838; /* Dark Charcoal text */
+    font-family: 'Montserrat', sans-serif; /* Clean, modern body text */
+    background-color: #F8F4E1; /* Soft, linen-like sand background */
+    color: #333333; 
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 .logo {
-    font-size: 2.5em;
-    letter-spacing: 5px;
-    color: #DAA520; /* Gold accent color */
+    font-family: 'Playfair Display', serif; /* Elegant, serif font for the name */
+    font-size: 2.8em;
+    letter-spacing: 7px;
+    color: #191970; /* Deep Lapis Blue for strong contrast */
     margin: 0;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #191970;
 }
 
 /* --- Header & Navigation --- */
@@ -20,61 +33,77 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    border-bottom: 1px solid #e0e0e0;
+    padding: 25px 80px; /* Increased padding for luxury feel */
+    border-bottom: 2px solid #D4AF37; /* Gold separating line */
 }
 
 .main-nav a {
-    color: #555;
+    color: #333333;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 30px; /* More space between links */
     text-transform: uppercase;
     font-size: 0.9em;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #D4AF37; /* Gold hover effect */
 }
 
 /* --- Hero Section --- */
 .hero {
     text-align: center;
-    padding: 100px 50px;
-    background-color: #fffaf0; /* Slightly different cream for contrast */
+    padding: 150px 50px; /* Significantly increased padding for luxury white space */
 }
 
 .hero h2 {
-    font-size: 3em;
-    color: #191970; /* Deep Lapis Blue for impact */
-    margin-bottom: 15px;
+    font-size: 4em;
+    margin-bottom: 20px;
+    font-weight: 400; /* Lighter weight is more elegant */
 }
 
 .hero p {
-    max-width: 600px;
-    margin: 0 auto 30px auto;
-    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 .shop-button {
     display: inline-block;
-    background-color: #DAA520; /* Gold button */
+    background-color: #D4AF37; /* Rich Gold button */
     color: white;
     text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+    background-color: #A98E3A;
 }
 
 /* --- Teaser Section --- */
 .about-us-teaser {
-    padding: 60px 50px;
+    padding: 80px 50px;
     text-align: center;
-    background-color: #fcf8e8;
+    background-color: #fff; /* Crisp white background for contrast */
+}
+
+.about-us-teaser h3 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
 /* --- Footer --- */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #2e2e2e;
-    color: #fcf8e8;
+    padding: 30px;
+    background-color: #191970; /* Deep Lapis Footer */
+    color: #F8F4E1;
     font-size: 0.8em;
 }
