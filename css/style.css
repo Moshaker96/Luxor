@@ -149,17 +149,15 @@ footer {
     box-shadow: 0 2px 32px rgba(0,0,0,0.10);
 }
 
-.product-image-container {
-    flex: 0 0 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 240px;
-    max-width: 400px;
-    background: #F8F4E1;
-    border-radius: 14px;
-    box-shadow: 0 2px 18px rgba(191,175,66,0.04);
-    padding: 18px;
+.product-image {
+    width: 100%;
+    max-width: 200px;   /* Make this smaller, e.g. 180-240px might be good */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.09);
+    object-fit: contain;
+    background: #fff;
+    margin-right: 20px;  /* add spacing between image and text */
 }
 
 .product-image {
