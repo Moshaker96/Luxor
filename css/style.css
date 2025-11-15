@@ -17,53 +17,35 @@ body {
 
 h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #191970; /* Default heading color for light backgrounds */
+    color: #F8F4E1; /* Default to light color for Hero section contrast */
 }
 
 /* --- Navigation Logo (file (1).png) --- */
 .logo {
     text-indent: -9999px; 
     overflow: hidden; 
-    width: 300px; /* Width for the logo image */
+    width: 300px; 
     height: 100px; 
     margin: 0;
-    
-    /* Navigation Logo: file (1).png */
+    /* THIS IS THE LOGO CHANGE: file (1).png for the header navigation */
     background-image: url('../file (1).png'); 
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: left center;
-    position: relative;
-    z-index: 10; 
 }
 
-/* --- Header & Navigation (Split Background: White behind Logo, Image on Right) --- */
+/* --- Header & Navigation --- */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 80px; 
-    
-    /* SPLIT BACKGROUND EFFECT: 
-       Layer 1: White gradient to cover the logo area (left 300px)
-       Layer 2: logo-01.jpg as the full background image */
-    background-image: 
-        linear-gradient(to right, 
-            #fff 380px, /* Solid White for the left side (380px to cover logo and padding) */
-            rgba(255, 255, 255, 0) 380px /* Transparent from 380px onwards to show the image */
-        ),
-        url('../logo-01.jpg'); /* The original image */
-        
-    background-size: cover; 
-    background-position: right center; /* Start image on the right */
-    background-repeat: no-repeat;
-
+    background-color: #fff; /* Clear white background for the navigation */
     border-bottom: 2px solid #D4AF37; 
 }
 
 .main-nav a {
-    /* Use light color for text over the dark logo-01.jpg background on the right side */
-    color: #F8F4E1; 
+    color: #333333;
     text-decoration: none;
     margin-left: 30px; 
     text-transform: uppercase;
@@ -76,24 +58,30 @@ h2, h3 {
     color: #D4AF37; 
 }
 
-/* --- Hero Section (Standard Clean Look) --- */
+/* --- Hero Section (Background is logo-01.jpg) --- */
 .hero {
     text-align: center;
     padding: 120px 50px; 
     
-    /* Revert to the soft, sand background for a clean look */
-    background-color: #F8F4E1; 
+    /* BACKGROUND IMAGE STYLES: Using logo-01.jpg for the full background */
+    background-image: url('../logo-01.jpg'); 
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed; 
+    
+    /* Optional dark overlay for text readability */
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4); 
     
     position: relative;
     z-index: 1; 
-    color: #333333; /* Dark text on light background */
+    color: #F8F4E1; 
 }
 
 .hero h2 {
     font-size: 4em;
     margin-bottom: 20px;
     font-weight: 400; 
-    color: #191970; /* Deep Lapis Blue heading */
 }
 
 .hero p {
@@ -142,7 +130,6 @@ footer {
     font-size: 0.8em;
 }
 
-/* * PRODUCT PAGE STYLING (nile-tunic.html) - APPEND YOUR EXISTING CSS BELOW THIS LINE
- * * You must add the existing CSS for your product page here 
- * (the CSS for .product-details, .image-placeholder, etc.). 
+/* * IMPORTANT: Add your Product Page (nile-tunic.html) CSS below this line 
+ * to ensure you don't lose the product page styling. 
 */
