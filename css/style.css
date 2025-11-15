@@ -117,3 +117,90 @@ footer {
     color: #F8F4E1;
     font-size: 0.8em;
 }
+/* --- Product Page Styling (nile-tunic.html) --- */
+
+.product-details {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    gap: 80px; /* Space between image and text */
+}
+
+.product-image-container {
+    flex: 1; /* Takes up 50% of the space */
+}
+
+.image-placeholder {
+    width: 100%;
+    padding-top: 150%; /* Aspect ratio for a tall product photo */
+    background-color: #E6E6FA; /* Light placeholder color (Lavender) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    color: #191970;
+    font-weight: 700;
+}
+
+.product-info {
+    flex: 1; /* Takes up 50% of the space */
+}
+
+.product-category {
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    color: #D4AF37; /* Gold accent */
+    margin-bottom: 5px;
+}
+
+.product-info h2 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.description-lead {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+    border-left: 3px solid #D4AF37; /* Gold line accent */
+    padding-left: 15px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.add-to-cart-button {
+    background-color: #191970; /* Deep Lapis Blue button */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+/* Make sure the header link is updated too */
+.main-nav a[href="nile-tunic.html"] {
+    color: #D4AF37; /* Highlight the active link */
+}
