@@ -1,0 +1,80 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Georgia', serif; /* Elegant, classic font */
+    background-color: #fcf8e8; /* Soft Sand/Linen White background */
+    color: #383838; /* Dark Charcoal text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.logo {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    color: #DAA520; /* Gold accent color */
+    margin: 0;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-nav a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #fffaf0; /* Slightly different cream for contrast */
+}
+
+.hero h2 {
+    font-size: 3em;
+    color: #191970; /* Deep Lapis Blue for impact */
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-style: italic;
+}
+
+.shop-button {
+    display: inline-block;
+    background-color: #DAA520; /* Gold button */
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Teaser Section --- */
+.about-us-teaser {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #fcf8e8;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    color: #fcf8e8;
+    font-size: 0.8em;
+}
