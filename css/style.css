@@ -24,8 +24,8 @@ h2, h3 {
 .logo {
     text-indent: -9999px; 
     overflow: hidden; 
-    width: 200px; 
-    height: 50px; 
+    width: 300px; 
+    height: 100px; 
     margin: 0;
     /* THIS IS THE LOGO CHANGE: file (1).png for the header navigation */
     background-image: url('../file (1).png'); 
