@@ -17,7 +17,7 @@ body {
 
 h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #F8F4E1; /* Changed to light color for visibility over dark background */
+    color: #F8F4E1; /* Light color for visibility over dark background */
 }
 
 /* --- Navigation Logo (Text replaced by image logo-01.jpg for SEO) --- */
@@ -27,6 +27,7 @@ h2, h3 {
     width: 200px; 
     height: 50px; 
     margin: 0;
+    /* This displays the secondary logo image */
     background-image: url('../logo-01.jpg'); 
     background-size: contain; 
     background-repeat: no-repeat;
@@ -57,30 +58,30 @@ h2, h3 {
     color: #D4AF37; 
 }
 
-/* --- Hero Section (Uses file (1).png as background) --- */
+/* --- Hero Section (Uses logo-01.jpg as background) --- */
 .hero {
     text-align: center;
     padding: 120px 50px; 
     
-    /* BACKGROUND IMAGE STYLES */
-    background-image: url('../file (1).png'); 
-    background-size: cover; /* Ensures the image covers the whole area */
+    /* BACKGROUND IMAGE STYLES: Now using the logo-01.jpg */
+    background-image: url('../logo-01.jpg'); 
+    background-size: cover; 
     background-position: center center;
-    background-attachment: fixed; /* Makes the background stay put when scrolling */
+    background-attachment: fixed; 
     
     /* Overlay to make text readable */
     position: relative;
-    z-index: 1; /* Ensures content is above the background */
-    color: #F8F4E1; /* Light text over the dark background */
+    z-index: 1; 
+    color: #F8F4E1; 
 }
 
-/* --- Styling for the main logo image (logo-01.jpg) inside the Hero --- */
+/* --- Styling for the main visual logo (file (1).png) inside the Hero --- */
 .main-visual {
     max-width: 300px; /* Adjust size of the logo visual */
     height: auto;
     margin-bottom: 20px;
-    border: 5px solid #D4AF37; /* Optional gold border for emphasis */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    border: 5px solid #D4AF37; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 .hero h2 {
@@ -123,7 +124,7 @@ h2, h3 {
 .about-us-teaser h3 {
     font-size: 2.5em;
     margin-bottom: 15px;
-    color: #191970; /* Revert H3 color for white background */
+    color: #191970; 
 }
 
 /* --- Footer (Styling kept the same) --- */
@@ -135,5 +136,5 @@ footer {
     font-size: 0.8em;
 }
 
-/* --- Product Page Styling (Kept at the bottom for completeness) --- */
-/* ... (Existing product page CSS goes here, ensure you don't overwrite it) ... */
+/* --- Product Page Styling (Kept at the bottom) --- */
+/* ... (Existing product page CSS goes here) ... */
