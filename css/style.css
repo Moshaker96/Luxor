@@ -16,11 +16,21 @@ body {
 }
 
 .logo {
-    font-family: 'Playfair Display', serif; /* Elegant, serif font for the name */
-    font-size: 2.8em;
-    letter-spacing: 7px;
-    color: #191970; /* Deep Lapis Blue for strong contrast */
+    /* Required to hide the text while keeping it for SEO */
+    text-indent: -9999px; 
+    overflow: hidden; 
+    
+    /* Set the dimensions based on your logo size (adjust if needed) */
+    width: 200px; 
+    height: 50px; 
     margin: 0;
+    
+    /* Load the logo image: The '../' goes up one folder (out of 'css') */
+    background-image: url('../logo-01.jpg'); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: left center;
+}
 }
 
 h2, h3 {
