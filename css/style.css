@@ -17,35 +17,41 @@ body {
 
 h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #F8F4E1; /* Default to light color for Hero section contrast */
+    color: #191970; /* Default heading color */
 }
 
 /* --- Navigation Logo (file (1).png) --- */
 .logo {
     text-indent: -9999px; 
     overflow: hidden; 
-    width: 300px; 
-    height: 100px; 
+    width: 150px; /* Width for the image file (1).png */
+    height: 50px; 
     margin: 0;
-    /* THIS IS THE LOGO CHANGE: file (1).png for the header navigation */
+    
+    /* Navigation Logo: file (1).png */
     background-image: url('../file (1).png'); 
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: left center;
+    position: relative;
+    z-index: 10; 
 }
 
-/* --- Header & Navigation --- */
+/* --- Header & Navigation (Split Background) --- */
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 80px; 
-    background-color: #fff; /* Clear white background for the navigation */
-    border-bottom: 2px solid #D4AF37; 
+    padding: 15px 80px; 
+    
+    /* SPLIT BACKGROUND EFFECT: Deep Lapis Blue on the left (250px), White on the right */
+    background: linear-gradient(to right, #191970 250px, #fff 250px);
+    
+    border-bottom: 2px solid #D4AF37; /* Gold separating line */
 }
 
 .main-nav a {
-    color: #333333;
+    color: #333333; 
     text-decoration: none;
     margin-left: 30px; 
     text-transform: uppercase;
@@ -58,30 +64,24 @@ h2, h3 {
     color: #D4AF37; 
 }
 
-/* --- Hero Section (Background is logo-01.jpg) --- */
+/* --- Hero Section (Standard Clean Look) --- */
 .hero {
     text-align: center;
     padding: 120px 50px; 
     
-    /* BACKGROUND IMAGE STYLES: Using logo-01.jpg for the full background */
-    background-image: url('../logo-01.jpg'); 
-    background-size: cover; 
-    background-position: center center;
-    background-attachment: fixed; 
-    
-    /* Optional dark overlay for text readability */
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.4); 
+    /* Revert to the soft, sand background */
+    background-color: #F8F4E1; 
     
     position: relative;
     z-index: 1; 
-    color: #F8F4E1; 
+    color: #333333; 
 }
 
 .hero h2 {
     font-size: 4em;
     margin-bottom: 20px;
     font-weight: 400; 
+    color: #191970; /* Deep Lapis Blue heading */
 }
 
 .hero p {
@@ -130,6 +130,4 @@ footer {
     font-size: 0.8em;
 }
 
-/* * IMPORTANT: Add your Product Page (nile-tunic.html) CSS below this line 
- * to ensure you don't lose the product page styling. 
-*/
+/* * IMPORTANT: Ensure your Product Page (nile-tunic.html) CSS is appended below this line */
