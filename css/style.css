@@ -87,9 +87,13 @@ h2, h3 {
     box-shadow: 0 2px 18px rgba(0,0,0,0.14);
 }
 
-.hero-text-bg h2, .hero-text-bg p {
-    color: #F8F4E1;                         /* Sand/linen for readability */
-    margin: 0 0 18px 0;
+.hero-text-bg h2 {
+    font-family: 'Montserrat', sans-serif;      /* Uses the modern sans serif */
+    font-size: 4.8em;                           /* Bigger than before! */
+    font-weight: 900;                           /* Bold and impactful */
+    letter-spacing: 2px;                        /* Slight spacing for elegance */
+    color: #F8F4E1;                             /* Light sand, for readability */
+    margin-bottom: 18px;
 }
 
 .hero-text-bg p {
