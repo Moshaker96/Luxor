@@ -78,33 +78,24 @@ h2, h3 {
     color: #F8F4E1; 
 }
 
-.hero h2 {
-    font-size: 4em;
-    margin-bottom: 20px;
-    font-weight: 400; 
-}
-
 .hero-text-bg {
     display: inline-block;
-    background: rgba(25, 25, 112, 0.67);         /* Semi-transparent deep lapis */
-    padding: 26px 32px;
-    border-radius: 10px;
-    margin-bottom: 32px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    background: rgba(0, 0, 0, 0.65);        /* Elegant black, 65% opacity */
+    padding: 30px 40px;
+    border-radius: 12px;
+    margin-bottom: 38px;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.14);
+}
+
+.hero-text-bg h2, .hero-text-bg p {
+    color: #F8F4E1;                         /* Sand/linen for readability */
+    margin: 0 0 18px 0;
 }
 
 .hero-text-bg p {
-    color: #F8F4E1;
-    margin: 0;
     font-size: 1.26em;
     font-weight: 400;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    font-size: 1.1em;
-    font-weight: 300;
+    margin-bottom: 0;
 }
 
 .shop-button {
