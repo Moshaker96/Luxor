@@ -84,6 +84,22 @@ h2, h3 {
     font-weight: 400; 
 }
 
+.hero-text-bg {
+    display: inline-block;
+    background: rgba(25, 25, 112, 0.67);         /* Semi-transparent deep lapis */
+    padding: 26px 32px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+
+.hero-text-bg p {
+    color: #F8F4E1;
+    margin: 0;
+    font-size: 1.26em;
+    font-weight: 400;
+}
+
 .hero p {
     max-width: 700px;
     margin: 0 auto 40px auto;
