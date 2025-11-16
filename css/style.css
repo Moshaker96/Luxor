@@ -215,3 +215,84 @@ footer {
         padding: 5px;
     }
 }
+/* --- ABOUT PAGE SPECIFIC STYLES --- */
+
+.about-hero {
+    background-color: #191970; /* Deep Lapis Blue background */
+    color: #F8F4E1; /* Sand text */
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.about-title {
+    font-size: 3.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #F8F4E1; /* Override the default h2 color if necessary */
+}
+
+.about-subtitle {
+    font-size: 1.1em;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Story Container Layout --- */
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.story-block {
+    flex: 1 1 45%; /* Blocks take up roughly half the container width */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.story-block h3 {
+    font-size: 2em;
+    color: #191970; /* Deep Lapis Blue for subheadings */
+    margin-bottom: 15px;
+}
+
+.story-block p {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+/* Styling for the image placeholders */
+.story-block-image {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-visual {
+    width: 100%;
+    height: 350px;
+    background-color: #D4AF37; /* Gold placeholder color */
+    /* You can replace this with an image later */
+    /* background-image: url('../path/to/about-image-1.jpg'); */
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #191970;
+}
+
+/* Styling for the full-width section (Section III) */
+.full-width-block {
+    flex: 1 1 100%; /* Takes up full width */
+    text-align: center;
+    background-color: #fff;
+    padding: 60px;
+    margin-top: 40px;
+    border-top: 2px solid #D4AF37;
+}
+
+.full-width-block h3 {
+    font-size: 2.5em;
+}
