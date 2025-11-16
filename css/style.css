@@ -163,7 +163,7 @@ footer {
 .product-image {
     width: 100%;
     max-width: 200px;   /* Make this smaller, e.g. 180-240px might be good */
-    height: auto;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.09);
     object-fit: contain;
