@@ -181,66 +181,25 @@ footer {
     background: #fff;
 }
 
-.product-info {
-    flex: 1;
-}
-
-.product-category {
-    font-size: 0.9em;
-    color: #191970;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: 2px;
-}
-
-.price {
-    font-size: 1.4em;
-    color: #D4AF37;
-    font-weight: 900;
-    margin-bottom: 14px;
-}
-
-.description-lead {
-    font-size: 1.05em;
-    color: #333;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
-}
-
-.features {
-    margin-bottom: 22px;
-    padding-left: 20px;
-}
-
-.purchase-options label {
-    font-weight: 600;
-    margin-right: 12px;
-}
-
-.purchase-options select {
-    padding: 6px 16px;
-    border-radius: 6px;
-    background: #f8f4e1;
-    border: 1px solid #d4af37;
-    margin-right: 18px;
-    font-weight: 400;
-}
-
-.add-to-cart-button {
-    background: #191970;
-    color: #F8F4E1;
+/* --- Pre-Order Button Style for Product Page --- */
+.pre-order-button {
+    display: block; /* Make it take up full width for prominence */
+    width: 100%;
+    text-align: center;
+    background-color: #D4AF37; /* Rich Gold */
+    color: white;
+    text-decoration: none;
+    padding: 15px 0; /* Padding top/bottom, zero left/right */
+    margin-top: 20px;
     border: none;
-    border-radius: 6px;
-    padding: 10px 28px;
-    font-size: 1em;
     font-weight: 700;
-    cursor: pointer;
-    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s;
 }
 
-.add-to-cart-button:hover {
-    background: #D4AF37;
-    color: #191970;
+.pre-order-button:hover {
+    background-color: #A98E3A; /* Darker Gold on hover */
 }
 
 /* --- Responsive adjustments for product section --- */
